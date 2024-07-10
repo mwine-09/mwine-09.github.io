@@ -1,0 +1,172 @@
+  body {
+            font-family: 'Arial', sans-serif;
+            background-color: #F0F4F8; /* Light Grayish Blue */
+            color: #1F2937; /* Dark Grayish Blue */
+            line-height: 1.6;
+        }
+
+        /* Navigation bar */
+        .navbar {
+            background-color: #3A0CA3; /* Deep Purple */
+            color: #fff;
+        }
+
+        .navbar a {
+            color: #fff;
+            padding: 0.5rem 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #CBD5E0; /* Light Gray */
+        }
+
+        /* Hero section */
+        .hero {
+            background-color: #3A0CA3; /* Dark Purple */
+            color: #fff;
+            padding: 6rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero .btn {
+            background-color: #fff;
+            color: #3A0CA3; /* Deep Purple */
+            padding: 0.75rem 2rem;
+            border-radius: 0.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .hero .btn:hover {
+            background-color: #3A0CA3; /* Deep Purple */
+            color: #fff;
+        }
+
+        /* Projects section */
+        .projects {
+            padding: 4rem 0;
+        }
+
+        .project-card {
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-card h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-card p {
+            margin-bottom: 1rem;
+        }
+
+        .project-card a {
+            color: #3A0CA3; /* Deep Purple */
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .project-card a:hover {
+            color: #7209B7; /* Dark Purple */
+        }
+
+        /* About section */
+        .about {
+            background-color: #CBD5E0; /* Light Gray */
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .about p {
+            max-width: 800px;
+            margin: 0 auto 2rem auto;
+            line-height: 1.8;
+        }
+
+        .about .btn {
+            background-color: #3A0CA3; /* Deep Purple */
+            color: #fff;
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .about .btn:hover {
+            background-color: #7209B7; /* Dark Purple */
+        }
+
+        /* Contact section */
+        .contact {
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .contact p {
+            max-width: 800px;
+            margin: 0 auto 2rem auto;
+            line-height: 1.8;
+        }
+
+        .contact .btn {
+            background-color: #3A0CA3; /* Deep Purple */
+            color: #fff;
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .contact .btn:hover {
+            background-color: #7209B7; /* Dark Purple */
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #1F2937; /* Dark Grayish Blue */
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .footer p {
+            margin: 0;
+        }

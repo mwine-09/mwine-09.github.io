@@ -1,15 +1,233 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Portfolio</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="styles/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- AOS Library -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <style>
+        /* Optional: Additional custom styles */
+        /* Customize styles as per your design */
+    </style>
 </head>
 
 <body>
-    <div class="container">
-        <p>Welcome to My Portfolio</p>
+
+    <!-- Navigation bar -->
+    <nav class="navbar bg-purple-600 text-white">
+        <div class="container mx-auto flex justify-between items-center py-4">
+            <a href="#" class="font-bold text-xl">My Portfolio</a>
+            <div>
+                <a href="#about" class="mr-4">About</a>
+                <a href="#projects" class="mr-4">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero section -->
+    <section class="hero bg-purple-700 text-white py-20">
+        <div class="container mx-auto">
+            <h1>Hello, I'm Amumpaire Tumuramye</h1>
+            <h3 class="mb-3">Alias [Mwiine]</h3>
+            <p>Junior Software Developer</p>
+            <p class="mt-4">Passionate about creating innovative solutions.</p>
+            <div class="mt-8">
+                <a href="#contact"
+                    class="btn bg-white text-purple-600 hover:bg-purple-400 hover:text-white font-bold py-2 px-4 rounded">Contact
+                    Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills section -->
+    <div class="container mx-auto mt-8" style="width: 90%;">
+
+        <section class="skills vh-100" id="skills" style="height:100vh;">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-bold"> Skills </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 ">
+                    <!-- Skill card 1 -->
+                    <div class="skill-card" data-aos="fade-up" data-aos-duration="1000">
+                        <h3 class="text-xl font-bold mb-2">Web Development</h3>
+                        <p class="mb-4 text-justify">I have experience in developing web applications using ASP.NET,
+                            Django,
+                            and
+                            Flask frameworks. I am proficient in front-end technologies like HTML, CSS, and JavaScript,
+                            and
+                            have worked on
+                            projects that involve building responsive and user-friendly interfaces.</p>
+                    </div>
+                    <!-- Skill card 2 -->
+                    <div class="skill-card" data-aos="fade-up" data-aos-duration="1000">
+                        <h3 class="text-xl font-bold mb-2">Mobile App Development</h3>
+                        <p class="mb-4 text-justify">I have developed cross-platform mobile applications using Google's
+                            Flutter SDK,
+                            enabling me to create apps that run on both Android and iOS platforms. I have experience in
+                            building
+                            user-friendly interfaces and integrating APIs to enhance app functionality.</p>
+                    </div>
+                    <!-- Skill card 3 -->
+                    <div class="skill-card" data-aos="fade-up" data-aos-duration="1000">
+                        <h3 class="text-xl font-bold mb-2">Database Management</h3>
+                        <p class="mb-4 text-justify">I am proficient in database management using MySQL and SQLite, with
+                            experience in
+                            designing and implementing database schemas, writing complex queries, and optimizing
+                            database
+                            performance. I
+                            have worked on projects that involve data modeling, migration, and integration with web
+                            applications.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Projects section -->
+        <section class="projects" id="projects" style="height: 100vh;">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-bold"> Projects </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 ">
+                    <!-- Project card 1 -->
+                    <div class="project-card" data-aos="fade-up" data-aos-duration="1000">
+                        <h3 class="text-xl font-bold mb-2">BioVerifyX</h3>
+                        <p class="mb-4 text-justify">Bioverify-x is an innovative application designed to ensure
+                            integrity
+                            and
+                            transparency in university examinations by
+                            leveraging the power of biometrics. Built with Django, this project aims to eliminate
+                            cheating
+                            and impersonation during
+                            exams by implementing a robust fingerprint verification system. </p>
+                        <a href="https://github.com/mwine-09/BioVerifyX-Project"
+                            class="text-blue-600 hover:underline">View
+                            Project</a>
+                    </div>
+                    <!-- Project card 2 -->
+                    <div class="project-card" data-aos="fade-up" data-aos-duration="1000">
+                        <h3 class="text-xl font-bold mb-2">Caravan</h3>
+                        <p class="mb-4 text-justify">A ride sharing (carpooling) cross platform mobile application
+                            developed
+                            using
+                            Google's Flutter SDK. The app connects driver with empty seats with commutes going in the
+                            same
+                            direction as they are.</p>
+                        <a href="https://github.com/mwine-09/CARAVAN" class="text-blue-600 hover:underline">View
+                            Project</a>
+                    </div>
+                    <!-- Project card 3 -->
+                    <div class="project-card" data-aos="fade-up" data-aos-duration="1000">
+                        <h3 class="text-xl font-bold mb-2">Math Challenge</h3>
+                        <p class="mb-4 text-justify">This system is designed to organize and manage a national
+                            mathematics
+                            competition
+                            for primary school children, enabling
+                            seamless participation, administration, and evaluation of challenges. The system integrates
+                            a
+                            web interface for
+                            administrators and a command-line interface for participants and school representatives.</p>
+                        <a href="https://github.com/mwine-09/math-challenge" class="text-blue-600 hover:underline">View
+                            Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About section -->
+        <section class="about" id="about" data-aos="fade-up" data-aos-duration="1000" style="height: 100vh;">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-8">About Me</h2>
+                <p class="mb-6 text-justify">
+                    Hello! I'm [Your Name], a passionate and dedicated software developer with a keen interest in
+                    creating
+                    impactful and
+                    innovative solutions. With a solid foundation in .NET development, mobile app development using
+                    Flutter,
+                    and expertise
+                    in ERP systems, I bring a versatile skill set to every project I undertake.
+
+                    My journey in software development began with a Bachelor's degree in Computer Science, where I honed
+                    my
+                    skills in
+                    ASP.NET, MAUI, and Python frameworks like Django, along with database management using MySQL and
+                    advanced libraries such
+                    as Pandas and NumPy. Throughout my career, I've had the opportunity to work on a diverse range of
+                    projects, from
+                    building scalable web applications to developing cross-platform mobile apps that enhance user
+                    experiences.
+
+                    What drives me is the challenge of solving complex problems and delivering solutions that not only
+                    meet
+                    but exceed
+                    expectations. I thrive in collaborative environments where I can learn from my peers and contribute
+                    my
+                    expertise to
+                    achieve common goals. I am particularly passionate about leveraging technology to transform business
+                    processes and
+                    improve operational efficiency.
+
+                    Outside of coding, I enjoy staying updated with the latest industry trends and technologies,
+                    exploring
+                    new frameworks,
+                    and continuously expanding my skill set. I believe in the power of continuous learning and strive to
+                    stay ahead in a
+                    rapidly evolving tech landscape.
+
+                    I'm excited about the opportunity to bring my technical skills and creativity to your projects.
+                    Let's
+                    collaborate and
+                    create something remarkable together!
+                </p>
+                <a href="/images/arnold-francisca-f77Bh3inUpE-unsplash.jpg" class="btn">Download Resume</a>
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section class="contact" id="contact" data-aos="fade-up" data-aos-duration="1000" style="height: 100vh;">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-8">Contact Me</h2>
+                <p class="mb-6">Feel free to reach out to discuss collaboration opportunities or to say hello!</p>
+                <a href="mailto:yourname@example.com" class="btn">Send Email</a>
+            </div>
+        </section>
+
     </div>
+    <!-- Footer -->
+    <footer class="footer bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- AOS Library Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Initialize AOS
+            AOS.init();
+
+            // Smooth scrolling to anchor links
+            $('a[href*="#"]').on('click', function (e) {
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: $($(this).attr('href')).offset().top
+                }, 1000, 'linear');
+            });
+
+            // Toggle project details
+            $('.project-card').on('click', function () {
+                $(this).find('.project-details').slideToggle();
+            });
+        });
+    </script>
+
+
+
 </body>
 
 </html>
