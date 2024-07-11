@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Mwiine</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="styles/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -20,7 +20,7 @@
     <!-- Navigation bar -->
     <nav class="navbar bg-purple-600 text-white">
         <div class="container mx-auto flex justify-between items-center py-4">
-            <a href="#" class="font-bold text-xl">My Portfolio</a>
+            <a href="#" class="font-bold text-xl">Mwiine-Software Engineer</a>
             <!-- <input type="checkbox" id="menu-toggle" class="hidden"> -->
             <label for="menu-toggle" class="menu-icon cursor-pointer md:hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
@@ -29,6 +29,8 @@
                 </svg>
             </label>
             <div class="menu-content hidden md:flex space-x-4">
+                <a href="#skills" class="hover:underline">Skills</a>
+
                 <a href="#about" class="hover:underline">About</a>
                 <a href="#projects" class="hover:underline">Projects</a>
                 <a href="#contact" class="hover:underline">Contact</a>
@@ -44,27 +46,32 @@
     </nav>
     <!-- Hero section -->
     <section class="hero bg-purple-700 text-white py-20 grid place-items-center" style="height:100vh;">
-        <div class="container mx-auto text-center">
-            <div class="mb-8">
-                <img src="images/mwine_portfolio1.jpg" alt="Amumpaire Tumuramye"
-                    class="w-32 h-32 rounded-full border-4 border-white shadow-lg mx-auto" style="object-fit: cover;">
+        <div class="container mx-auto text-center grid grid-cols-3 gap-8 place-items-center">
+            <div class="col-span-2">
+                <h1 class="text-4xl font-bold mb-2">Hello, I'm Amumpaire Tumuramye</h1>
+                <h3 class="text-2xl font-semibold mb-1">Alias [Mwiine]</h3>
+                <p class="text-xl mb-2">Software Engineer</p>
+                <p class="text-lg mb-4">Passionate about creating innovative solutions.</p>
+                <div class="mt-8">
+                    <a href="#contact"
+                        class="btn bg-white text-purple-600 hover:bg-purple-400 hover:text-white font-bold py-2 px-4 rounded">
+                        Contact Me
+                    </a>
+                </div>
             </div>
-            <h1 class="text-4xl font-bold">Hello, I'm Amumpaire Tumuramye</h1>
-            <h3 class="mb-3 text-2xl">Alias [Mwiine]</h3>
-            <p class="text-xl">Junior Software Developer</p>
-            <p class="mt-4 text-lg">Passionate about creating innovative solutions.</p>
-            <div class="mt-8">
-                <a href="#contact"
-                    class="btn bg-white text-purple-600 hover:bg-purple-400 hover:text-white font-bold py-2 px-4 rounded">
-                    Contact Me
-                </a>
+
+            <div class="col-span-1">
+                <div class="mb-8">
+                    <img src="images/mwine_portfolio1.jpg" alt="Amumpaire Tumuramye"
+                        class="w-40 border-2 border-white shadow-lg mx-auto" style="object-fit: cover;">
+                </div>
             </div>
         </div>
     </section>
 
     <div class="container mx-auto mt-8" style="width: 90%;">
         <!-- skills section -->
-        <section class="skills vh-100" id="skills">
+        <section class="skills" id="skills">
             <div class="container mx-auto text-center">
                 <h2 class="text-3xl font-bold"> Skills </h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 ">
@@ -100,15 +107,29 @@
                             have worked on projects that involve data modeling, migration, and integration with web
                             applications.</p>
                     </div>
+
+                    <!-- desktop development with MAUI -->
+                    <div class="skill-card
+                    " data-aos="fade-up" data-aos-duration="1000">
+                        <h3 class="text-xl font-bold mb-2">Desktop App Development</h3>
+                        <p class="mb-4 text-justify">I have experience in developing desktop applications using .NET
+                            MAUI, enabling me to create
+                            cross-platform apps that run on Windows, macOS, and Linux. I have worked on projects that
+                            involve
+                            building
+                            user-friendly interfaces and integrating APIs to enhance app functionality.</p>
+
+
+
+                    </div>
                 </div>
-            </div>
         </section>
 
 
         <!-- Projects section -->
         <section class="projects" id="projects">
             <div class="container mx-auto text-center">
-                <h2 class="text-3xl font-bold"> Projects </h2>
+                <h2 class="text-3xl font-bold"> My Recent Work</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 ">
                     <!-- Project card 1 -->
                     <div class="project-card" data-aos="fade-up" data-aos-duration="1000">
@@ -159,46 +180,46 @@
         <section class="about" id="about" data-aos="fade-up" data-aos-duration="1000">
             <div class="container mx-auto">
                 <h2 class="text-3xl font-bold mb-8">About Me</h2>
-                <p class="mb-6 text-justify">
-                    Hello! I'm Mwiine, a passionate and dedicated software developer with a keen interest in
-                    creating
-                    impactful and
-                    innovative solutions. With a solid foundation in .NET development, mobile app development using
+                <p class="mb-6 text-justify short-text">
+                    Hello! I'm Mwiine, a passionate and dedicated software developer with a keen interest in creating
+                    impactful
+                    and innovative solutions. With a solid foundation in .NET development, mobile app development using
                     Flutter,
-                    and expertise
-                    in ERP systems, I bring a versatile skill set to every project I undertake.
+                    and expertise in ERP systems, I bring a versatile skill set to every project I undertake.
 
                     My journey in software development began with a Bachelor's degree in Computer Science, where I honed
                     my
-                    skills in
-                    ASP.NET, MAUI, and Python frameworks like Django, along with database management using MySQL and
-                    advanced libraries such
-                    as Pandas and NumPy. Throughout my career, I've had the opportunity to work on a diverse range of
-                    projects, from
-                    building scalable web applications to developing cross-platform mobile apps that enhance user
-                    experiences.
+                    skills in ASP.NET, MAUI, and Python frameworks like Django, along with database management using
+                    MySQL and
+                    advanced libraries such as Pandas and NumPy. Throughout my career, I've had the opportunity to work
+                    on a
+                    diverse range of projects, from building scalable web applications to developing cross-platform
+                    mobile apps
+                    that enhance user experiences.
 
                     What drives me is the challenge of solving complex problems and delivering solutions that not only
-                    meet
-                    but exceed
-                    expectations. I thrive in collaborative environments where I can learn from my peers and contribute
-                    my
-                    expertise to
-                    achieve common goals. I am particularly passionate about leveraging technology to transform business
-                    processes and
-                    improve operational efficiency.
+                    meet but
+                    exceed expectations. I thrive in collaborative environments where I can learn from my peers and
+                    contribute
+                    my expertise to achieve common goals. I am particularly passionate about leveraging technology to
+                    transform
+                    business processes and improve operational efficiency.
 
                     Outside of coding, I enjoy staying updated with the latest industry trends and technologies,
-                    exploring
-                    new frameworks,
-                    and continuously expanding my skill set. I believe in the power of continuous learning and strive to
-                    stay ahead in a
-                    rapidly evolving tech landscape.
+                    exploring new
+                    frameworks, and continuously expanding my skill set. I believe in the power of continuous learning
+                    and
+                    strive to stay ahead in a rapidly evolving tech landscape.
 
                     I'm excited about the opportunity to bring my technical skills and creativity to your projects.
                     Let's
-                    collaborate and
-                    create something remarkable together!
+                    collaborate and create something remarkable together!
+                </p>
+                <p>
+
+
+                    <a href="#" class="btn read-more-btn">Read more</a>
+                    <a href="#" class="btn read-less-btn" style="display:none;">Read less</a>
                 </p>
                 <a href="#" class="btn">Download Resume</a>
             </div>
@@ -249,6 +270,31 @@
         document.querySelector('.menu-icon').addEventListener('click', function () {
             const mobileMenu = document.getElementById('mobile-menu');
             mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const readMoreBtn = document.querySelector(".read-more-btn");
+            const readLessBtn = document.querySelector(".read-less-btn");
+            const shortText = document.querySelector(".short-text");
+
+            readMoreBtn.addEventListener("click", function (e) {
+                e.preventDefault();
+                shortText.classList.add("full-text");
+                shortText.classList.remove("short-text");
+                readMoreBtn.style.display = "none";
+                readLessBtn.style.display = "inline-block";
+            });
+
+            readLessBtn.addEventListener("click", function (e) {
+                e.preventDefault();
+                shortText.classList.remove("full-text");
+                shortText.classList.add("short-text");
+                readLessBtn.style.display = "none";
+                readMoreBtn
+                    .style.display = "inline-block";
+            });
         });
     </script>
 

@@ -33,12 +33,14 @@
             color: #fff;
             padding: 6rem 0;
             text-align: center;
+            box-sizing: border-box;
+            box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         section{
             padding: 4rem 0;
             min-height: 80vh;
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
         }
 
         .hero h1 {
@@ -74,7 +76,7 @@
             box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        .project-card {
+        .project-card ,.skill-card{
             background-color: #fff;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             border-radius: 0.5rem;
@@ -131,6 +133,21 @@
             text-align: center;
             box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);
         }
+
+        .short-text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 6; /* Show only 6 lines */
+    line-clamp: 6;
+    -webkit-box-orient: vertical;
+}
+
+.full-text {
+    display: block;
+    line-clamp: unset;
+    -webkit-line-clamp: unset; /* Show full text */
+}
+
 
         @media screen and (max-width: 600px) {
             #about {
